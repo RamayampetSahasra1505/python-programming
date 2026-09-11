@@ -1,0 +1,11 @@
+class Solution:
+    def insertInTail(self, head, data):
+        n6=Node(data)
+        if head is None:
+            return n6
+        n5=head
+        while n5.next is not None:
+            n5=n5.next
+        n5.next=n6
+        n6.prev=n5
+        return head
