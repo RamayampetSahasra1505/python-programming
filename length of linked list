@@ -1,0 +1,8 @@
+class Solution:
+    def getCount(self, head):
+        cnt=0
+        p=head
+        while p!=None:
+            cnt=cnt+1
+            p=p.next
+        return cnt
